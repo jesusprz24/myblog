@@ -1,0 +1,84 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* navbar */
+
+.nav {
+    overflow: hidden;
+    background-color: #a4243b;
+    padding: 10px;
+}
+
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 40px;
+
+}
+
+.nav a:hover {
+    background-color: beige;
+    color: black;
+}
+
+.nav a.active {
+    background-color: white;
+    color: white;
+}
+
+/* title */
+
+.title {
+    font-size: 20px;
+    text-align: right;
+    padding: 14px 20px;
+    background-color: #151e3f;
+    color: white;
+}
+
+/* cards */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 gray;
+    padding: 16px;
+    text-align: center;
+    background-color: beige;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
